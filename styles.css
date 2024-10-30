@@ -1,4 +1,4 @@
-body{
+body {
     font-family: "Sora", sans-serif;
     background-color: #080F1D;
     color: white;
@@ -6,101 +6,125 @@ body{
     padding: 0;
     font-size: 16px;
     font-weight: 200;
+    height: 100%;
+}
+
+.main-container {
+    flex: 1;
+    min-height: 80vh;
 }
 
 .header-content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 0px; 
+    padding: 20px 0px;
     position: fixed;
     width: 100%;
     background-color: #080F1D;
     z-index: 1000;
+    padding: 20px;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(0, 0, 0),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.right-container-header{
+.right-container-header {
 
     display: flex;
     align-items: center;
     padding-top: 10px;
-    margin-right: 30px;
-   
-    
-
-}
-.evolxLogo{
-padding-top: 10px;
-max-width: 100px;
-padding-left: 15%;
-margin-right: auto;
-
-
+    margin-right: 10%;
 }
 
-.heroImage{
-display: flex;
-width: 90%;
-height: auto;
-justify-content: center;
-margin:auto;
-border-radius: 28px;
+.whatsappNumber {
+
+    font-size: 18px;
+}
+
+.evolxLogo {
+    padding-top: 10px;
+    max-width: 100px;
+    padding-left: 10%;
+    margin-right: auto;
+}
+
+.heroImage {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    border-radius: 28px;
+    position: relative;
 
 }
 
-.heroimagesection{
-padding-top: 90px;
+.heroimagesection {
+    padding-top: 90px;
 
 }
-.msg-logo{
+
+.msg-logo {
     padding-right: 8px;
     width: 24px;
 }
 
 .blue-semi-square {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
-    width: 70px; 
+    width: 70px;
 }
 
-.leftmargin5{
- margin-left:8%;
+.leftmargin5 {
+    margin-left: 8%;
 }
-.leftmargin3{
+
+.leftmargin3 {
     margin-left: 5%;
 }
-.servicesandspaces{
+
+.servicesandspaces {
     margin-left: 8%;
-    
-}
-.decoration1{
-position: absolute;
-left: 65%;
-margin-top: -40px;
 
 }
+
+.decoration1 {
+    position: absolute;
+    width: 28%;
+    height: auto;
+    max-height: 200px;
+    left: 65%;
+    margin-top: -40px;
+}
+
 section {
-
     padding-bottom: 12px;
 }
-h1, h2 , h3{
+
+h1,
+h2,
+h3 {
     color: #fff;
     font-size: 21px;
 }
 
 h2 {
     font-size: 21px;
-    
+    color: #6BE0FF;
 }
-h3{
+
+h3 {
     font-size: 21px;
     text-align: center;
-
 }
-p{
+
+p {
     font-size: 16px;
 }
+
 ul {
     list-style-type: none;
     padding-right: 12px;
@@ -120,50 +144,171 @@ table {
 
 table td {
     padding: 8px;
-    border-bottom: 1px solid #154ADA;
+    border-bottom: 1px solid #2A2D51;
 }
 
-.chiptitle{
- background-color:#154ADA ;
- max-width: 120px;
- justify-content: center;
- align-items: center;
- border-radius: 40px;
- padding-top: 8px;
- padding-bottom: 8px;
- padding-left: 24px;
- padding-right: 24px;
+.chiptitle {
+    display: flex;
+    margin-left: 8%;
+    color: #6BE0FF;
 }
 
-.espacios-list{
-    display: flex; 
-    flex-wrap: wrap; 
+.espacios-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 .espacios-list li {
-    width: calc(50% - 10px); 
-    color: white; /* Color del texto */
+    width: calc(50% - 10px);
+    color: white;
+    /* Color del texto */
 }
 
 .prices td:nth-child(2) {
     text-align: right;
 }
-.bottomimage{
-    display: flex;
-    width: 90%;
-    height: auto;
-    justify-content: center;
-    margin:auto;
-    padding-top: 20px;
 
+.highlight {
+    background-color: #2A2D51;
 }
 
-footer {
-    background-color: #154ADA;
-    text-align: center;
+.bottomimage {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.footerInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
     padding: 15px;
 }
 
-.footerParagraph{
+.pinIcon {
+    margin-right: 12px;
+    width: 50px;
+    height: auto;
+}
 
-    font-size:21px ;
+.footerParagraph {
+    font-size: 21px;
+}
+
+.deskFotterInfo {
+    display: none;
+}
+
+.espacios {
+    margin-left: 0%;
+}
+
+/* mediaQueries */
+@media only screen and (min-width: 1224px) {
+    body {
+        font-family: "Sora", sans-serif;
+        background-color: #080F1D;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 200;
+        height: 100%;
+    }
+
+    .evolx-content {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        height: 100%;
+        justify-content: space-between;
+        padding-top: 120px;
+        padding-left: 60px;
+    }
+
+    .decoration1 {
+        position: absolute;
+        left: auto;
+        top: 25%;
+        right: -60px;
+        min-height: 280px;
+    }
+
+    .heroimagesection {
+        padding-top: 0px;
+        position: relative;
+    }
+
+    .heroImage {
+        width: 650px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 28px;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        max-width: 48%;
+        margin: auto;
+
+    }
+
+    .leftContainer {
+        padding-right: 20px;
+        /* Añade espacio entre los contenedores */
+    }
+
+    .rightContainer {
+        padding-left: 20px;
+        /* Añade espacio entre los contenedores */
+        width: 100%;
+    }
+
+    .deskFotterInfo {
+        display: flex !important;
+        margin-top: 60px;
+    }
+
+    .footerInfo {
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+
+    .servicesandspaces {
+        display: flex;
+        direction: row;
+        margin-left: 0%;
+        margin-top: 8%;
+    }
+
+    .whatsappNumber {
+
+        font-size: 22px;
+    }
+
+    .main-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+
+    .services {
+        min-width: 50%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .leftmargin3 {
+        margin-left: 6%;
+    }
 }
